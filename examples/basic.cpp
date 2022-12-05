@@ -1,5 +1,5 @@
 #define _USE_MATH_DEFINES // for sin/log
-#include "../matplotlibcpp.h"
+#include "../src/matplotlibcpp.h"
 #include <cmath>
 #include <iostream>
 
