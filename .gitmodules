@@ -1,6 +1,7 @@
-[submodule "cmake_utils"]
-	path = cmake_utils
-url=https://github.com/Mattiapzz/cmake_utils.git
+
 [submodule "submodules/Utils"]
 	path = submodules/Utils
-url=https://github.com/Mattiapzz/Utils.git
+	url = https://github.com/Mattiapzz/Utils.git
+[submodule "cmake_utils"]
+	path = cmake_utils
+	url = https://github.com/Mattiapzz/cmake_utils.git
