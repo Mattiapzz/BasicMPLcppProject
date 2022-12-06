@@ -87,7 +87,7 @@ end
 desc 'compile without rebuild the proj'
 task :compile do
   FileUtils.cd "build"
-  puts "run compile for SHORTMOTIONPLANNER".yellow
+  puts "run compile for MPL".yellow
   sh 'cmake  --build . --config Release  --target install '+PARALLEL
   FileUtils.cd ".."
 end
@@ -95,10 +95,10 @@ end
 desc 'compile without rebuild the proj'
 task :run_tests do
   FileUtils.cd "bin"
-  puts "run tests for SHORTMOTIONPLANNER".yellow
+  puts "run tests for MPL".yellow
   Dir.glob('./*.exe') do |filename|
     puts "run test: #{filename}".blue
-    sh "./"+filename
+    sh "./"+filename + " &"
   end
   FileUtils.cd ".."
 end
