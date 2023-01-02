@@ -157,6 +157,9 @@ namespace mpl
 } // namespace mpl
 
 #include "BasicMPLcppProject/MPL.hxx"
+#include "BasicMPLcppProject/PlotCollector.hxx"
+
+// #include "matplotlibcpp.h"
 
 #endif
 

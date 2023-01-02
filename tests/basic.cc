@@ -1,5 +1,6 @@
 #define _USE_MATH_DEFINES // for sin/log
 #include "matplotlibcpp.h"
+#include "BasicMPLcppProject.hh"
 #include <cmath>
 #include <iostream>
 
@@ -27,4 +28,5 @@ int main() {
 
   plt::savefig("standard.pdf"); // save the figure
   plt::show();
+  plt::colorbar();
 }

@@ -22,42 +22,28 @@
 */
 
 ///
-/// file: MPL.hh
+/// file: PlotCollector.cc
 ///
 
-#pragma once
+// #include "matplotlibcpp.h"
+#include "BasicMPLcppProject.hh"
 
-#ifndef INCLUDE_MPL
-#define INCLUDE_MPL
+// namespace plt = matplotlibcpp;
 
 namespace mpl
 {
 
-  //! class1 Base class container
-  /**
-   * Base plot container
-   */
-  class class1 
-  {
-  private:
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  public:
+  PlotCollector::PlotCollector(void)  { 
+    // plt::figure();
+    // plt::show();
+    // this->plot1 = plt::Plot();
+    // this->plot2 = plt::Plot();
+   }
 
-    //! class1 copy constructor
-    class1(class1 const &) = default;
-
-    ~class1(void) = default;
-
-    //! SpeedMatching class constructor
-    class1(void);
-
-    
-  }; // class class1
-
-} // namespace mp
-
-#endif
+} // namespace mpl
 
 ///
-/// eof: MPL.hh
+/// eof: PlotCollector.cc
 ///

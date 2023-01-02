@@ -15,6 +15,9 @@
 
 #pragma once
 
+// #ifndef INCLUDE_MATPLOTLIBCPP
+// #define INCLUDE_MATPLOTLIBCPP
+
 #include <algorithm>
 #include <array>
 #include <cstdint> // <cstdint> requires c++11 support
@@ -2052,3 +2055,5 @@ private:
 };
 
 } // end namespace matplotlibcpp
+
+// #endif

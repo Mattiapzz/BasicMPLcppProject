@@ -1,6 +1,7 @@
 {
   "files.associations": {
     "*.xodr": "xml",
-    "limits": "cpp"
+    "limits": "cpp",
+    "cmath": "cpp"
   }
 }

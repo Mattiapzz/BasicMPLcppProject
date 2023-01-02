@@ -1,11 +1,22 @@
-#define _USE_MATH_DEFINES // for sin/log
-#include "../src/matplotlibcpp.h"
-#include <cmath>
-#include <iostream>
+// TEST 1
+
+#include "matplotlibcpp.h"
+#include "BasicMPLcppProject.hh"
 
 namespace plt = matplotlibcpp;
 
-int main() {
+int main(void)
+{
+
+  std::cout << "TEST 1"
+            << std::endl
+            << std::endl;
+
+  mpl::PlotCollector mycoll; // = mpl::PlotCollector::PlotCollector()
+
+  // plt::figure(); // declare a new figure (optional if only one is used)
+  // plt::show();
+
   int n = 5000; // 5000 data points
   std::vector<double> x(n), y(n), z(n), w(n, 2);
   for (int i = 0; i < n; ++i) {
@@ -27,4 +38,8 @@ int main() {
 
   plt::savefig("standard.pdf"); // save the figure
   plt::show();
+  plt::colorbar();
+
+
+  return 0;
 }
